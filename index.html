@@ -1,0 +1,348 @@
+    <!------------------------------------------------
+                Index Page of Web Report 
+    ------------------------------------------------->
+<!DOCTYPE html> <!--  specifies that this document is an HTML5 document -->
+<html lang="en"> <!-- document language is english -->
+
+<head> <!-- contains the meta data about the document -->
+    <meta charset="UTF-8"> <!-- character encoding that represent all characters in the Unicode standard -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- ensure that the page is displayed correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensure that your web page is displayed correctly on screens of different sizes and resolutions -->
+    <title>Ajith Binny 3099625</title> <!-- title of the web page -->
+    <link rel="stylesheet" href="css/style.css"> <!-- link to the external css style sheet -->
+</head>
+
+<body>
+    <!------------------------------------------------
+                Header and Navigation bar
+    ------------------------------------------------->
+    <header>
+        <h4>AJITH BINNY <span>3099625</span></h4> <!-- span is given to show student number in different color -->
+        <h2 class="page-title">WEB REPORT</h2>
+    </header>
+    <nav class="header-nav"> <!-- header and nav are seperated so that, only the nav can be stick to the top for mobile version -->
+        <ul>
+            <li>
+                <h2><a href="#" class="active">HOME</a></h2>
+            </li>
+            <li>
+                <h2><a href="about.html">ABOUT</a></h2> <!-- link to the about page -->
+            </li>
+            <li>
+                <h2><a href="bibliography.html">BIBLIOGRAPHY</a></h2> <!-- link to the bibliography page -->
+            </li>
+        </ul>
+    </nav>
+    <!------------------------------------------------
+                    Report Title
+    ------------------------------------------------->
+    <section class="report-title">
+        <h1>How Semantic HTML, CSS Flex box and Grid layout are used to structure and layout web pages</h1>
+    </section>
+    <main class="main-report">
+    <!------------------------------------------------
+                Table  of Content
+    ------------------------------------------------->
+        <aside>
+            <nav> <!-- links to different sections of this page -->
+                <h2>In this article</h2>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#semantic-html">Semantic HTML</a></li>
+                    <li><a href="#css-flexbox">CSS Flexbox</a></li>
+                    <li><a href="#grid-layout">Grid Layout</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        </aside>
+    <!------------------------------------------------
+                    Introduction 
+    ------------------------------------------------->
+        <article>
+            <section id="introduction">
+                <section class="topic">
+                    <h2>Introduction</h2>
+                    <p>
+                        In the early days of the Internet, HTML was introduced as a markup language for sharing
+                        scientific
+                        and other informative content. It was not particularly concerned with the aesthetics of the
+                        pages.
+                        Later, as internet usage increased, designers began to make their pages more visually appealing.
+                        Since this was never the intended purpose of HTML, programmers were required to implement
+                        workarounds.
+                    </p>
+                    <p>
+                        In recent years, the web design industry has undergone a tremendous transformation. Due to the
+                        diversity of consumers and search engine optimization, coding standards have changed. Semantic
+                        HTML
+                        and more convenient CSS properties like flexbox and grid layout are often used now. This report
+                        will
+                        describe how they are used to structure and layout web pages, as well as the technologies and
+                        procedures involved in delivering web-based content using semantic HTML, CSS Flexbox, and Grid.
+                    </p>
+                </section>
+            </section>
+    <!------------------------------------------------
+                    Semantic HTML 
+    ------------------------------------------------->
+            <section id="semantic-html">
+                <section class="topic">
+                    <h2>Semantic HTML</h2>
+                    <p>
+                        Semantic refers to the meaning of a code in programming. Prior to Semantic HTML, the elements
+                        had no significance in terms of what they performed or what content they contained. As a
+                        general-purpose element, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" 
+                        target="_blank"><code>&lt;div&gt;</code></a> was used to construct everything from headings
+                        to footers to articles. With semantic, we can replace <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+                        target="_blank"><code>&lt;div&gt;</code></a> with more descriptive elements such
+                        as the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+                        target="_blank"><code>&lt;header&gt;</code></a> tag which represents the main header of a
+                        web page, while the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+                        target="_blank"><code>&lt;nav&gt;</code></a> tag defines the navigation links. Likewise, the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+                        target="_blank"><code>&lt;section&gt;</code></a> tag is used to define an independent
+                        section of a web page, whereas the <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">
+                        <code>&lt;article&gt;</code></a> is used to define an independent item of content within a
+                        section. This will inform developers and browsers of the exact function and content of the element. 
+                        <br>Some advantages of semantic HTML include:
+                    </p>
+                    <ul class="ul-style">
+                        <li>Screen readers can use it to help visually impaired users to navigate a page</li>
+                        <li>Finding blocks of meaningful code is significantly easier than searching through endless divs</li>
+                        <li>Help the developer to identify the type of data that will be populated</li>
+                    </ul>
+                    <p>An example of Semantic HTML is as follows</p>
+                    <section class="semantic-image-code image-code">
+                        <figure>
+                            <img class="semantic-image" src="images/semantic-html.png"
+                                alt="A Wireframe showing Semantic HTML.">
+                            <figcaption><a href="https://www.semrush.com/blog/semantic-html5-guide/"
+                                    target="_blank">Vlado Pavlik (2022)</a>
+                            </figcaption>
+                        </figure>
+                        <pre>
+                            <code> <!-- Example of Semantic HTML -->
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;figure&gt;
+            &lt;img&gt;
+            &lt;figcaption&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;p&gt;&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;section&gt;&lt;/section&gt;
+&lt;/main&gt;
+&lt;aside&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+&lt;/aside&gt;
+&lt;footer&gt;&lt;/footer&gt;
+                            </code>
+                        </pre>
+                    </section>
+                </section>
+            </section>
+    <!------------------------------------------------
+                    Flex Box 
+    ------------------------------------------------->
+            <section id="css-flexbox">
+                <section class="topic">
+                    <section>
+                        <h2>CSS Flexbox</h2>
+                        <p>
+                            The primary objective of the flex configuration is to provide the container with the ability
+                            to adjust the width/height and order of its objects to best utilize the available space, mostly
+                            to accommodate to all kind of display devices and screen sizes. A flex container expands or
+                            contracts its contents to accommodate available space or to prevent excess.
+                        </p>
+                        <p>
+                            The CSS Flex box paradigm relies on two fundamental concepts: the flex container and the
+                            flex elements. The flex container serves as the parent element for one or more flex elements. It
+                            is defined using the property <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                            target="_blank"><code>display: flex;</code></a>. The flex items are the child elements
+                            within the flex container, and they can be aligned and distributed using a variety of CSS
+                            properties, including <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                            target="_blank"><code>justify-content</code></a>, 
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">
+                            <code>align-items</code></a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
+                            target="_blank"><code>flex-basis</code></a>.
+                        </p>
+                    </section>
+                    <p>A diagram explaining flexbox terminology.</p>
+                    <figure class="flex-terminology">
+                        <img class="flex-img" src="images/flex-terminology.png" alt="A diagram explaining flexbox terminology.">
+                        <figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                                target="_blank">Chris Coyier (2013)</a>
+                        </figcaption>
+                    </figure>
+                    <section>
+                        <h3>Simple case</h3>
+                        <p>
+                            A container is set to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                            target="_blank"><code>display: flex;</code></a>, which turns the three child items into
+                            flex items. To evenly place items on the main axis, <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                            target="_blank"><code>justify-content</code></a> is set as
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                            target="_blank"><code>space-between</code></a>. The left and right items are level with
+                            the flex container's sides and spaced evenly. The default <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                            target="_blank"><code>align-items</code></a> value is <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+                            target="_blank"><code>stretch</code></a>, so the items stretch on the cross axis. The 
+                            items extend to the height of the flex container, making them look as tall as the tallest item.
+                        </p>
+                        <section class="flex-image-code image-code">
+                            <figure>
+                                <img src="images/space-between.png" alt="A diagram explaining flexbox terminology.">
+                                <figcaption><a
+                                        href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-justify-content"
+                                        target="_blank">Chris Coyier (2013)</a>
+                                </figcaption>
+                            </figure>
+                            <pre>
+                                <code> 
+&lt;article&gt;                         
+    &lt;section&gt;&lt;/section&gt;
+    &lt;section&gt;&lt;/section&gt;
+    &lt;section&gt;&lt;/section&gt;
+&lt;/article&gt;
+                                </code>
+                            </pre>
+                            <pre>
+                                <code> 
+article {
+    display: flex;
+    justify-content: space-between;
+}
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                </section>
+            </section>
+    <!------------------------------------------------
+                    Grid Layout 
+    ------------------------------------------------->
+            <section id="grid-layout">
+                <section class="topic">
+                    <section>
+                        <h2>Grid Layout</h2>
+                        <p>
+                            The CSS Grid layoyt is a two-dimensional grid system that facilitates the creation of
+                            complicated, multi-column layouts by web developers in a straightforward manner. It is a
+                            powerful and adaptable instrument that provides precise control over the positioning and
+                            sizing of components within a grid. This control can be exercised in a variety of ways.
+                        </p>
+                        <p>
+                            The grid is created using a container element that is defined with the
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                            target="_blank"><code>display: grid;</code></a> property. After that, rows and columns
+                            are created within the container by utilizing the <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
+                            target="_blank"><code>grid-template-rows</code></a> and
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
+                            target="_blank"><code>grid-template-columns</code></a> attributes, respectively. These
+                            characteristics determine the dimensions of the matrix as well as the number of rows and columns.
+                        </p>
+                        <p>
+                            The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row"
+                            target="_blank"><code>grid-row</code></a> and <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column"
+                            target="_blank"><code>grid-column</code></a> properties are used to describe the grid
+                            items, which are the individual components that are positioned within the grid. These
+                            properties specify the row and column that the item should be positioned in, as well as the number of
+                            rows or columns it should cover.
+                        </p>
+                    </section>
+                    <section>
+                        <h4>Simple case</h4>
+                        <p>
+                            The following example shows a three column, two row grid with elemets spaning to more than
+                            one grid track.
+                        </p>
+                        <section class="image-code grid-image-code">
+                            <figure>
+                                <img src="images/grid-layout.png"
+                                    alt="A diagram showing positioning items which span more than one grid track..">
+                                <figcaption><a href="https://gridbyexample.com/examples/example5/"
+                                        target="_blank">Rachel Andrew</a>
+                                </figcaption>
+                            </figure>
+                            <pre class="grid-html">
+                                <code> 
+&lt;article&gt;                         
+    &lt;section class="a"&gt;A&lt;/section&gt;
+    &lt;section class="b"&gt;B&lt;/section&gt;
+    &lt;section class="c"&gt;C&lt;/section&gt;
+    &lt;section class="d"&gt;D&lt;/section&gt;
+&lt;/article&gt;
+                                </code>
+                            </pre>
+                            <pre class="grid-css">
+                                <code> 
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.b {
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+}
+.c {
+    grid-column: 1 ;
+    grid-row: 2 ;
+}
+.d {
+    grid-column: 2;
+    grid-row: 2;
+}
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                </section>
+            </section>
+    <!------------------------------------------------
+                    Conclusion 
+    ------------------------------------------------->
+            <section id="conclusion">
+                <section class="topic">
+                    <h2>Conclusion</h2>
+                    <p>
+                        In conclusion, semantic HTML, CSS Flex box, and Grid layout are indispensable technologies for
+                        developing websites that are responsive, contemporary, and aesthetically stunning. Developers
+                        are able to create web sites that are readily maintained and accessible when they use semantic HTML,
+                        and CSS Flex box and Grid layout provide layout techniques that are both flexible and powerful,
+                        enabling developers to create user interfaces that are both complicated and dynamic.
+                    </p>
+                    <p>
+                        It is essential for web designers and developers to have an excellent understanding of the
+                        aforementioned technologies and to maintain a high level of knowledge of the most recent
+                        developments in recommended procedures and strategies. This will not only lead to an improvement
+                        in the standard of their work, but it will also assist them in maintaining their competitive edge
+                        in the quickly developing industry of web design.
+                    </p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <!------------------------------------------------
+                    Footer Section 
+    ------------------------------------------------->
+    <footer>
+        <h4>AJITH BINNY 3099625</h4>
+        <address>
+            <a href="mailto:ajithbinny13@gmail.com">ajithbinny13@gmail.com</a> <!-- 'mailto' will open the email app when the link is clicked-->
+        </address>
+    </footer>
+</body>
+
+</html>
